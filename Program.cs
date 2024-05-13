@@ -1,4 +1,5 @@
 ﻿
+using Modulo10;
 using System;
 
 public class Program
@@ -10,8 +11,39 @@ public class Program
         // AulaHeranca();
         // AulaClasseSelada();
         // AulaClasseAbstrata();
-        AulaRecord();
+        //AulaRecord();
+        // Conversores();
+        // TrabalhandoComStrings();
+        TrabalhandoComDatas();
+    }
 
+    private static void TrabalhandoComDatas()
+    {
+        var trabalhandoComDatas = new Modulo11.TrabalhandoComDatas();
+        //trabalhandoComDatas.AulaDateTime();
+        // trabalhandoComDatas.AulaSubtraindoDatas();
+        trabalhandoComDatas.AulaAdicionandoDiasMesAno();
+    }
+
+    private static void TrabalhandoComStrings()
+    {
+        var trabalhandoComStrings = new Modulo10.TrabalhandoComStrings();
+        //trabalhandoComStrings.ConverterParaLetrasminusculas();
+        //trabalhandoComStrings.ConverterParaLetrasMaiuscula();.
+        // trabalhandoComStrings.AulaSubstring();
+        //trabalhandoComStrings.AulaRange();
+        // trabalhandoComStrings.AulaContains();
+        //trabalhandoComStrings.AulaTrim();
+        // trabalhandoComStrings.AulaStartWithEndWith();
+        //trabalhandoComStrings.AulaReplace();
+        trabalhandoComStrings.Aulalength();
+    }
+
+    private static void Conversores()
+    {
+        var conversores = new Conversores.Conversor();
+        // conversores.ConvertAndParse();
+        conversores.AulaTryParse();
     }
 
     private static void AulaRecord()
@@ -57,7 +89,7 @@ public class Program
 
     }
 
-    private static void AulaHeranca()
+    private static void AulaHeranca() 
     {
         var pessoaFisica = new Cadastro.PessoaFisica();
         pessoaFisica.Id = 1;
