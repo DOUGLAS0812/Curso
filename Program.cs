@@ -14,7 +14,15 @@ public class Program
         //AulaRecord();
         // Conversores();
         // TrabalhandoComStrings();
-        TrabalhandoComDatas();
+        // TrabalhandoComDatas();
+        TrabalhandoComExcesoes();
+    }
+
+    private static void TrabalhandoComExcesoes()
+    {
+        var trabalhandoComExececoes = new Modulo12.TrabalhandoComExecoes();
+        //trabalhandoComExececoes.AulaGerandoException();
+        trabalhandoComExececoes.AulatratandoException();
     }
 
     private static void TrabalhandoComDatas()
@@ -22,7 +30,11 @@ public class Program
         var trabalhandoComDatas = new Modulo11.TrabalhandoComDatas();
         //trabalhandoComDatas.AulaDateTime();
         // trabalhandoComDatas.AulaSubtraindoDatas();
-        trabalhandoComDatas.AulaAdicionandoDiasMesAno();
+        //trabalhandoComDatas.AulaAdicionandoDiasMesAno();
+        // trabalhandoComDatas.AulaAdicionandoHoraMinutoSegundo();
+        //  trabalhandoComDatas.AulaDiaDaSemana();
+        //trabalhandoComDatas.AulaDateOnly();
+        trabalhandoComDatas.AulaTimeOnly();
     }
 
     private static void TrabalhandoComStrings()
@@ -48,16 +60,16 @@ public class Program
 
     private static void AulaRecord()
     {
-         var curso1 = new Cadastro.Curso(1,"curso" );
+        var curso1 = new Cadastro.Curso(1, "curso");
         var curso2 = curso1 with { Descricao = "Teste Novo" };
 
         //var curso2 = new Cadastro.Curso { Id = 1, Descricao = "curso" };
-       // var curso1 = new Cadastro.CursoTeste { Id = 1,  Descricao = "Curso" };
+        // var curso1 = new Cadastro.CursoTeste { Id = 1,  Descricao = "Curso" };
         // var curso2 = curso1;
         // curso2.Descricao = "TESTE TESTE";
-       // var curso2 = new Cadastro.CursoTeste();
-       // curso2.Id = curso1.Id;
-       // curso2.Descricao = "Nova descricao";
+        // var curso2 = new Cadastro.CursoTeste();
+        // curso2.Id = curso1.Id;
+        // curso2.Descricao = "Nova descricao";
 
         Console.WriteLine(curso2.Descricao);
         Console.WriteLine(curso2.Descricao);
@@ -74,7 +86,7 @@ public class Program
         cachorro.ImprimirDados();
     }
 
-    private static void  AulaClasseSelada()
+    private static void AulaClasseSelada()
     {
         /*var configuracao = new Cadastro.Configuracao();
         configuracao.Host = "localhost";
@@ -89,7 +101,7 @@ public class Program
 
     }
 
-    private static void AulaHeranca() 
+    private static void AulaHeranca()
     {
         var pessoaFisica = new Cadastro.PessoaFisica();
         pessoaFisica.Id = 1;

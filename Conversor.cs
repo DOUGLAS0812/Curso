@@ -1,6 +1,6 @@
 ﻿using System;
 
-    namespace Conversores;
+namespace Conversores;
 
 public class Conversor
 {
@@ -11,7 +11,7 @@ public class Conversor
         bool verdadeiro = bool.Parse("true");
         Console.WriteLine(verdadeiro);
 
-       // Console.WriteLine(numero);
+        // Console.WriteLine(numero);
     }
 
     public void AulaTryParse()
@@ -20,12 +20,12 @@ public class Conversor
 
         int numeroConvertido;
 
-        if (int.TryParse(numero, out  numeroConvertido))
+        if (int.TryParse(numero, out numeroConvertido))
         {
             Console.WriteLine(" Numero foi  Convertido");
         }
-        
+
         Console.WriteLine(numeroConvertido);
-        
+
     }
 }
