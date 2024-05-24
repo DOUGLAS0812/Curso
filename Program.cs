@@ -15,7 +15,17 @@ public class Program
         // Conversores();
         // TrabalhandoComStrings();
         // TrabalhandoComDatas();
-        TrabalhandoComExcesoes();
+        //TrabalhandoComExcesoes();
+        TrabalhandoComArquivos();
+    }
+
+    private static void TrabalhandoComArquivos()
+    {
+        var trabalhandoComArquivos = new Modulo13.TrabalhandoComArquivos();
+        //trabalhandoComArquivos.AulaCriandoArquivos();
+        //trabalhandoComArquivos.AulalendoArquivo();
+        trabalhandoComArquivos.AulaExcluindoArquivo();
+
     }
 
     private static void TrabalhandoComExcesoes()

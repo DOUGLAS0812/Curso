@@ -16,4 +16,28 @@ public class TrabalhandoComArquivos
         escrever.Close();
 
     }
+
+    public void AulalendoArquivo()
+    {
+        //var conteudo = File.ReadAllText("Cadastro.txt");
+        //Console.WriteLine(conteudo);
+
+        var ler = new StreamReader("Cadastro.txt");
+
+        while (ler.EndOfStream) 
+        {
+            var linha = ler.ReadLine();
+            Console.WriteLine(linha);
+        }
+        ler.Close();
+    }
+
+    public void AulaExcluindoArquivo()
+    {
+       if(File.Exists("Cadastro.txt"))
+        {
+            File.Delete("Cadastro.txt");
+        }
+    }
+
 }
