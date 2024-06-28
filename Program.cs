@@ -16,10 +16,16 @@ public class Program
         // TrabalhandoComStrings();
         // TrabalhandoComDatas();
         //TrabalhandoComExcesoes();
+        //TrabalhandoComArquivos();
         TrabalhandoComArquivos();
     }
 
     private static void TrabalhandoComArquivos()
+    {
+          var linq = new Modulo14.TrabalhandoComLinq();
+        linq.AulaWhere();
+    }
+    private static void TrabalhandoComLinq()
     {
         var trabalhandoComArquivos = new Modulo13.TrabalhandoComArquivos();
         //trabalhandoComArquivos.AulaCriandoArquivos();
